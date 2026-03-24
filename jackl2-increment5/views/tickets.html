@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tickets</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/style.css">
+<script src="../static/script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="ticket-title">Buy Tickets</h1>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="exhibitions.html">Exhibitions</a>
+  <a href="tickets.html">Tickets</a>
+</nav>
+
+<div class="ticket-cards">
+
+  <div class="ticket-card">
+    <h2>General</h2>
+    <p class="price">$15</p>
+    <button onclick="openModal(15)">Buy Ticket</button>
+  </div>
+
+  <div class="ticket-card">
+    <h2>Student</h2>
+    <p class="price">$10</p>
+    <button onclick="openModal(10)">Buy Ticket</button>
+  </div>
+
+  <div class="ticket-card">
+    <h2>Member</h2>
+    <p class="price">Free</p>
+    <button onclick="openModal(0)">Buy Ticket</button>
+  </div>
+
+</div>
+
+<div class="ticket-image">
+  <img src="../static/show.jpg" alt="Museum Show">
+</div>
+
+<footer>
+  <p>© <span id="year"></span> MonoMuse</p>
+</footer>
+
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+
+    <span id="closeBtn" class="close">&times;</span>
+
+    <h2>Purchase</h2>
+
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="number" id="qty" value="1" min="1">
+
+    <p class="total">Total: $<span id="total">0</span></p>
+
+    <button id="submitBtn">Confirm</button>
+
+  </div>
+</div>
+
+</body>
+</html>

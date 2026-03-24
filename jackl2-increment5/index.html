@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<title>MonoMuse</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./static/style.css">
+<script src="./static/script.js" defer></script>
+</head>
+
+<body>
+
+<div class="main_img">
+  <img src="./static/monomuselogo.png">
+</div>
+
+<div id="map"></div>
+
+<div class="container">
+
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="views/exhibitions.html">Exhibitions</a>
+  <a href="views/tickets.html">Tickets</a>
+</nav>
+
+
+
+<h2 id="greeting">Welcome</h2>
+
+<div class="card">
+  <p>
+    MonoMuse is a contemporary museum exploring art and technology.
+  </p>
+</div>
+
+<br>
+
+<button onclick="location.href='views/exhibitions.html'">Explore Exhibitions</button>
+<button onclick="location.href='views/tickets.html'">Buy Tickets</button>
+
+<div class="card">
+  <h2>About MonoMuse</h2>
+  <p>
+    MonoMuse is dedicated to exploring the evolving relationship between art,
+    technology, and society. Our mission is to inspire curiosity and creativity
+    by showcasing innovative exhibitions that highlight how digital tools,
+    emerging technologies, and human imagination shape the future of artistic
+    expression.
+  </p>
+</div>
+
+<footer>
+  <p>© <span id="year"></span> MonoMuse</p>
+</footer>
+
+</div>
+
+<div class="video">
+<iframe 
+src="https://www.youtube.com/embed/clPSdvY5GzE"
+title="Museum Tour"
+allowfullscreen>
+</iframe>
+</div>
+
+</body>
+</html>
